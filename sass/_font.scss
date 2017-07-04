@@ -1,0 +1,34 @@
+@include font-face(
+	$font-bebas_neueregular,
+	font-files(
+		"bebas/bebasneue-webfont.woff",
+		"bebas/bebasneue-webfont.ttf",
+		"bebas/bebasneue-webfont.svg#bebas_neueregular"),
+    "bebas/bebasneue-webfont.eot");
+
+
+@include font-face(
+  $font-helvetica,
+  font-files(
+    "helvetica/HelveticaNeueLTStd-Md.woff",
+    "helvetica/HelveticaNeueLTStd-Md.ttf",
+    "helvetica/HelveticaNeueLTStd-Md.svg#HelveticaNeueLTStd-Md"),
+    "helvetica/HelveticaNeueLTStd-Md.eot");
+
+@include font-face(
+  $font-helvetica-bold,
+  font-files(
+    "helvetica/HelveticaNeueLTStd-Bd.woff",
+    "helvetica/HelveticaNeueLTStd-Bd.ttf",
+    "helvetica/HelveticaNeueLTStd-Bd.svg#HelveticaNeueLTStd-Bd"),
+    "helvetica/HelveticaNeueLTStd-Bd.eot");
+
+
+@include font-face(
+  $font-helvetica-light,
+  font-files(
+    "helvetica/HelveticaNeueLTStd-Lt.woff",
+    "helvetica/HelveticaNeueLTStd-Lt.ttf",
+    "helvetica/HelveticaNeueLTStd-Lt.svg#HelveticaNeueLTStd-Lt"),
+    "helvetica/HelveticaNeueLTStd-Lt.eot");
+

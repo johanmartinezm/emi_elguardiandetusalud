@@ -1,0 +1,713 @@
+.banner_principal{
+	width:100%;
+	height:800px;
+	float:left;
+	background-image: url(../images/fondo_banner.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	@include susy-breakpoint($mobile) {
+		height: 500px;
+	}
+
+	.cont_paciente{
+		background-image: url(../images/back_persona.png);
+		background-repeat: no-repeat;
+		background-position: 90% bottom;
+		width: 100%;
+		margin: 0 auto;
+		height: 800px;
+
+		@include susy-breakpoint($tablet-768) {
+			width: 90%;
+			background-image: url(../images/back_persona_tablet.png);
+		}
+
+		@include susy-breakpoint($mobile) {
+			width: 100%;
+			background-image: url(../images/back_persona_mobile.png);	
+			background-position: center 82px;
+			height: 500px;
+		}
+
+
+		.info{
+			width: 500px;
+			float: left;
+			margin-top: 60px;
+			margin-left: 110px;
+
+			@include susy-breakpoint($tablet-768) {
+				width: 317px;
+				margin-left: 0px;
+			}
+
+			@include susy-breakpoint($mobile) {
+				width: 100%;
+				margin-top: 25px;
+				margin-left: 0px;
+			}			
+
+			.logo{
+				float: left;
+				
+				margin-bottom: 64px;
+
+				@include susy-breakpoint($tablet-768) {
+					margin-left: 0px;
+					margin-bottom: 40px;
+				}
+
+
+				@include susy-breakpoint($mobile) {
+					width: 82px;
+					margin-left: 30px;
+					margin-bottom: 30px;
+				}
+
+			}
+
+			h2{
+				font-family: $font-bebas_neueregular;
+				font-size: 85px;
+				color: #666666;
+				width: 451px;
+				float: left;
+				font-weight: normal;
+				line-height: 85px;
+
+				@include susy-breakpoint($tablet-768) {
+					font-size: 60px;
+					width: 100%;
+				}
+
+				@include susy-breakpoint($mobile) {
+					font-size: 30px;
+					width: 170px;
+					line-height: 32px;
+					margin-right: 92px;
+					margin-left: 30px;
+				}
+			}
+
+			.icons{
+				width: 100%;
+				float: left;
+				text-align: center;
+				margin-left: 47px;
+
+				@include susy-breakpoint($tablet-768) {
+					margin-left: 0px;
+					text-align: left;
+
+				}
+
+				@include susy-breakpoint($mobile) {
+					margin-left: 0px;
+					background-color:#bfbfbf;
+					margin-top: 64px;
+					height: 200px;
+				}
+
+				.item{
+					width: 150px;
+					float: left;
+
+					@include susy-breakpoint($tablet-768) {
+						width: 100%;
+						margin-bottom: 20px;
+					}
+
+					@include susy-breakpoint($mobile) {
+						width: 75px;
+						
+						display: inline-block;
+						margin-top: 40px;
+						margin-left: 25px;
+					}
+
+					img{
+						@include susy-breakpoint($tablet-768) {
+							float: left;
+							width: 75px;
+						}
+
+						@include susy-breakpoint($mobile) {
+							width: 35px;
+						}
+
+					}				
+
+					p{
+						font-family: $font-helvetica;
+						color: #666;
+						font-size: 12px;
+						margin-top: 30px;
+
+						@include susy-breakpoint($tablet-768) {
+							float: left;
+							width: 200px;
+							font-size: 17px;
+							margin-top: 15px;
+							margin-left: 10px;
+						}
+					}
+				}
+			}
+		}
+
+
+
+		
+	}
+}
+
+
+.cont_formulario{
+	background-image:url(../images/back_formulario.png);
+	width:100%;
+	float: left;
+	height: 565px;
+	text-align: center;
+
+	@include susy-breakpoint($tablet-768) {
+		height: auto;
+	}
+
+	@include susy-breakpoint($mobile) {
+		height: auto;
+		padding-bottom: 30px;
+	}
+
+	h2{
+		color: #fff;
+		font-family: $font-helvetica-bold;
+		font-size: 40px;
+		float: left;
+		width: 100%;
+		text-align: center;
+		margin-top: 100px;
+
+		@include susy-breakpoint($mobile) {
+			margin-top: 50px;
+			margin-bottom: 20px;
+		}
+	}
+
+
+	p{
+		width: 100%;
+		float: left;
+		font-family: $font-helvetica-light;
+		color: #fff;
+		font-size: 18px;
+		margin-bottom: 30px;
+		margin-top: 30px;
+
+		@include susy-breakpoint($mobile) {
+			width: 90%;
+			margin-top: 20px;
+			margin: 0 auto;
+			float: none;
+		}
+	}
+
+	.formulario{
+		margin: 0 auto;
+		width: 95%;
+		text-align: center;
+
+
+		@include susy-breakpoint($mobile) {
+			margin-top: 20px;
+		}
+
+		.item{
+			display: inline-block;
+			width: 282px;
+			margin-left: 10px;
+
+			@include susy-breakpoint($tablet-1024) {
+				margin-bottom: 20px;
+			}
+
+			@include susy-breakpoint($tablet-768) {
+				margin-bottom: 20px;
+			}			
+
+
+			@include susy-breakpoint($mobile) {
+				margin-bottom: 20px;
+
+			}
+
+			label{
+				width: 100%;
+				display: inline-block;
+				color: #fff;
+				text-align: left;
+				font-family: $font-helvetica-light;
+				font-size: 18px;
+				margin-bottom: 20px;
+				padding-left: 10px;
+
+				@include susy-breakpoint($mobile) {
+					width: 100%;
+				}
+			}
+
+			input{
+				width: 262px;
+				height: 40px;
+				border: 0px;
+				border-radius: 20px;
+				padding-left:20px;
+				color: #999999;
+			}
+		}
+
+
+	}
+
+	.btn_enviar{
+		background-color: #90278e;
+		width: 282px;
+		height: 32px;
+		padding-top: 8px;
+		color: #fff;	
+		display: inline-block;	
+		border-radius: 20px;
+		font-family: $font-helvetica;
+		font-size: 20px;
+		margin-top: 50px;
+
+		@include susy-breakpoint($mobile) {
+			margin-bottom: 20px;
+		}
+	}
+
+	.copy_form{
+		font-size: 15px;
+	}
+}
+
+.cont_beneficios{
+	background: #f1f1f1;
+	float: left;
+	width: 100%;
+	text-align: center;
+	padding-bottom: 100px;
+
+	h2{
+		font-family: $font-helvetica-bold;
+		color: #666666;
+		font-size: 30px;
+		margin-top: 100px;
+
+		@include susy-breakpoint($mobile) {
+			width: 83%;
+			margin: 0 auto;
+			margin-top: 50px;
+			
+		}
+
+		span{
+			@include susy-breakpoint($mobile) {
+				display: none;
+			}
+		}
+	}
+
+	#slider{
+		width: 100%!important;
+		margin: 0 auto;
+		margin-top: 70px;
+
+		
+
+		@include susy-breakpoint($tablet-768) {
+			width: 680px!important;
+		}
+
+
+		@include susy-breakpoint($mobile) {
+			width: 290px!important;
+		}
+
+		.slide{
+
+			p{
+				width: 200px;
+				margin: 0 auto;
+				color: #666666;
+				font-family: $font-helvetica-light;
+				font-size: 15px;
+			}
+
+		}
+	}
+
+	.controls{
+		display: none;
+
+		@include susy-breakpoint($tablet-1024) {
+			display: inline-block;
+		}
+
+		@include susy-breakpoint($tablet-768) {
+			display: inline-block;
+			
+		}
+
+		@include susy-breakpoint($mobile) {
+			display: inline-block;
+			
+		}
+
+		a{
+			display: inline-block;
+			width: 18px;
+			height: 44px;
+			font-size: 0px;
+			position: absolute;
+			margin-top: -230px;
+		}
+		.prevBtn{
+			left: 0px;
+			margin-left: 20px;
+			background: url(../images/prev.png);
+		}
+
+		.nextBtn{
+			right: 0px;
+			margin-right: 20px;
+			background: url(../images/next.png);
+		}
+	}
+
+	.link_benef{
+		display: inline-block;
+		width: 323px;
+		height: 32px;
+		padding-top:8px;
+
+		border:2px solid #666666;
+		color: #666666;
+		font-family: $font-helvetica-bold;
+		font-size: 18px;
+		border-radius: 20px;
+		margin-top: 100px;
+
+		&:hover{
+			background-color: #666666;
+			color: #fff;
+		}
+
+		@include susy-breakpoint($mobile) {
+			width: 283px;
+		}
+
+	}
+}
+
+.cont_comentario{
+	background-color: #999;
+	width: 100%;
+	float: left;
+	padding-top: 90px;
+	text-align: center;
+	padding-bottom: 100px;
+
+	h2{
+		color: #fff;
+		font-family: $font-helvetica-bold;
+		font-size: 30px;
+		margin-bottom: 74px;
+	}
+
+	#slider_comen{
+		width: 900px!important;
+		margin: 0 auto;
+		margin-top: 70px;
+
+		@include susy-breakpoint($tablet-1024) {
+			width: 583px!important;
+		}
+
+		@include susy-breakpoint($tablet-768) {
+			width: 583px!important;
+		}
+
+		@include susy-breakpoint($mobile) {
+			width: 250px!important;
+		}
+
+		.slide{
+			width: 250px!important;
+			margin-right: 70px!important;
+
+			@include susy-breakpoint($mobile) {
+				
+				margin-right: 0px!important;
+			}
+
+			p{
+				text-align: left;
+				color: #fff;
+				&.title{
+					font-family: $font-helvetica-bold;
+					font-size: 18px;
+					margin-top: 30px;
+				}
+
+				&.hora{
+					background: url(../images/reloj.png) no-repeat left center;
+					padding-left: 15px;
+					font-family: $font-helvetica-light;
+					font-size: 12px;
+				}
+
+				&.name{
+					font-family: $font-helvetica-light;
+					font-size: 12px;
+					margin-top: 5px;
+				}
+			}
+
+			.coment{
+				margin: 0 auto;
+				background: url(../images/comillas_sup.png) no-repeat left top;
+				width: 250px;
+				height: 100px;
+				padding-left: 20px;
+				text-align: left;
+				margin-top: 20px;
+				p{
+					font-family: $font-helvetica-light;
+					font-size: 18px;
+					width: 188px;
+					
+					padding-right: 20px;
+					margin: 0 auto;
+					text-align: left;
+					background: url(../images/comillas_inf.png) no-repeat right bottom;
+				}
+			}
+		}
+	}
+
+	.controls{
+		
+
+		a{
+			display: inline-block;
+			width: 18px;
+			height: 44px;
+			font-size: 0px;
+			position: absolute;
+			margin-top: -200px;
+			@include susy-breakpoint($mobile) {
+				margin-top: -287px;
+			}
+		}
+
+		.prevBtn{
+			left: 0px;
+			margin-left: 40px;
+			background: url(../images/prev_white.png);
+		}
+
+		.nextBtn{
+			right: 0px;
+			margin-right: 40px;
+			background: url(../images/next_white.png);
+		}
+	}
+}
+
+footer{
+	background: #999;
+	float: left;
+	width: 100%;
+	color:#fff;
+	font-family: $font-helvetica-light;
+	font-size: 12px;
+	padding-bottom: 50px;
+
+	@include susy-breakpoint($tablet-1024) {
+		padding-bottom: 50px;
+	}
+
+	@include susy-breakpoint($tablet-768) {
+		padding-bottom: 50px;
+	}
+
+	.contacto{
+		margin-top: 100px;
+		margin-left: 110px;
+		float: left;
+		text-align: left;
+
+		@include susy-breakpoint($tablet-1024) {
+			margin-left: 60px;
+		}
+
+		@include susy-breakpoint($tablet-768) {
+			margin-left: 60px;
+		}
+
+		@include susy-breakpoint($mobile) {
+			text-align: center;
+			margin-left: 0px;
+			width: 55%;
+			margin: 0 auto;
+			margin-top: 60px;
+			float: none;
+		}
+
+		p{
+			margin-bottom: 10px;
+		}
+
+		a{
+			display: inline-block;
+			font-size: 0px;
+			float: left;
+			
+
+			@include susy-breakpoint($mobile) {
+				float: none;
+				margin-top: 50px;
+			}
+
+			&.facebook{
+				background:url(../images/icon_facebook.png);
+				width: 9px;
+				height: 18px;
+				margin-right: 10px;
+			}
+
+			&.youtube{
+				background:url(../images/icon_youtube.png);
+				width: 20px;
+				height: 15px;
+				margin-top: 2px;
+				margin-right: 10px;
+			}
+
+			&.vimeo{
+				background:url(../images/icon_vimeo.png);
+				width: 18px;
+				height: 15px;
+				margin-top: 2px;
+			}
+		}
+	}
+
+	.logo{
+		float: right;
+		margin-right: 110px;
+		margin-top: 80px;
+		text-align: right;
+
+		p{
+			@include susy-breakpoint($mobile) {
+				display: none;
+			}
+		}
+
+		@include susy-breakpoint($tablet-1024) {
+			margin-right: 60px;
+		}
+
+		@include susy-breakpoint($tablet-768) {
+			margin-right: 60px;
+
+		}
+
+
+		@include susy-breakpoint($mobile) {
+			margin-right: 0px;
+			float: none;
+			text-align: center;
+		}
+	}
+
+	.copy_mobile{
+		display: none;
+		text-align: center;
+		width: 100%;
+		margin-top: 30px;
+
+		@include susy-breakpoint($mobile) {
+			display: inline-block;
+		}
+
+	}
+
+	.cont_text_thanks{
+		margin-top: 80px;
+		margin-left: 110px;
+		float: left;
+		@include susy-breakpoint($tablet-768) {
+			margin-left: 60px;
+		}
+
+		@include susy-breakpoint($mobile) {
+			text-align: center;
+			margin-left: 0px;
+			width: 100%;
+		}
+	}
+
+	.logo_thanks{
+		float: right;
+		margin-right: 110px;
+		margin-top: 50px;
+		@include susy-breakpoint($tablet-768) {
+			margin-right: 60px;
+		}
+
+		@include susy-breakpoint($mobile) {
+			margin-top: 20px;
+		}
+	}
+}
+
+
+.back_thanks{
+	background: url(../images/back_thanks.png);
+	width: 100%;
+	height: 800px;
+	float: left;
+
+	@include susy-breakpoint($mobile) {
+		height: 322px;
+	}
+
+	.cont_text{
+		width: 1000px;
+		margin: 0 auto;
+		height: 800px;
+		background-image: url(../images/back_persona_thanks.png);
+		background-repeat: no-repeat;
+		background-position: right bottom;
+		background-size: 100%;
+
+		@include susy-breakpoint($tablet-768) {
+			margin-top: 20px;
+			width: 100%;
+			background-image: url(../images/back_persona_thanks_tablet.png);
+			background-size: contain;
+			height: 921px;
+		}
+
+		@include susy-breakpoint($mobile) {
+			margin-top: 20px;
+			width: 100%;
+			background-image: url(../images/back_persona_thanks_mobile.png);
+			background-size: contain;
+			height: 322px;
+		}
+	}
+}
